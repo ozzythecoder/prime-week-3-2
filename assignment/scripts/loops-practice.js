@@ -18,7 +18,7 @@ for (let i = 0; i <= 5; i++) {
   console.log(i);
 }
 // Personal preference: I prefer to use <= rather than <
-// so I can specify the final number in the count.
+// so I can specify the final target number in the code.
 
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
@@ -49,7 +49,7 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-for (let i = 0; i < stars.length - 1; i++) {
+for (let i = 0; i < stars.length; i++) {
   console.log(stars[i]);
 }
 
@@ -58,9 +58,24 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let i = 0;
+do {
+  console.log(stars[i]);
+  i++;
+} while (i < stars.length);
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+i = 10;
+do {
+  console.log(i);
+  i--;
+} while (i >= 5);
